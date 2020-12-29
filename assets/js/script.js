@@ -1,3 +1,6 @@
+// add a function to generate numbers from low to high
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -10,5 +13,18 @@ function writePassword() {
 
 }
 
+function generatePassword() {
+    
+}
+
+
+
+
+
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+let generateButton=document.getElementById("generate");
+let passwordEntry=document.getElementById("password");
+generateButton.onclick = generatePassword;
