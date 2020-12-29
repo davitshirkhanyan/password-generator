@@ -133,5 +133,13 @@ header {
     .btn {
       font-size: 0.8rem;
     }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .card-header h2 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
   }
   /* END STYLE MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
