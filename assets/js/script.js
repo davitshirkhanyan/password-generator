@@ -15,7 +15,7 @@ function generatePassword() {
 
     let randomPassword = '';
     let characters = '';
-
+  
     if(confirmUpperChar === true) {
         characters += passwordCharacters.upperCaseCharCodes;
     }
@@ -35,7 +35,7 @@ function generatePassword() {
     // randomize the characters
     for(let i = 0; i < confirmLength; i++) {
         randomPassword += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
+    }  
     return randomPassword;
 }
 
@@ -58,7 +58,7 @@ let passwordLength = function() {
 
 // add function for uppercase characters
 let upperCase = function() {
-    confirmUpperChar = confirm("Click OK to add uppercase characters");
+    confirmUpperChar = confirm("Click OK to add Uppercase Characters");
     if (confirmUpperChar === true) {
         confirmUpperChar = true;
     }
@@ -67,7 +67,7 @@ let upperCase = function() {
 
 // add function for lowercase characters
 let lowerCase = function() {
-    confirmLowerChar = confirm("Click OK to add lowercase characters");
+    confirmLowerChar = confirm("Click OK to add Lowercase Characters");
     if (confirmLowerChar === true) {
         confirmLowerChar = true;
     }
@@ -76,7 +76,7 @@ let lowerCase = function() {
 
 // add function for number characters
 let numberCase = function() {
-    confirmNumberChar = confirm("Click OK to add number characters");
+    confirmNumberChar = confirm("Click OK to add Numeric Characters");
     if (confirmNumberChar === true) {
         confirmNumberChar = true;
     }
@@ -85,7 +85,7 @@ let numberCase = function() {
 
 // add function for symbol characters
 let symbolCase = function() {
-    confirmSymbolChar = confirm("Click OK to add symbol characters");
+    confirmSymbolChar = confirm("Click OK to add Special Characters");
     if (confirmSymbolChar === true) {
         confirmSymbolChar = true;
     }
@@ -95,7 +95,7 @@ let symbolCase = function() {
 // add function if answer is outside the parameters
 let parameters = function() {
     while(confirmUpperChar === false && confirmLowerChar === false && confirmNumberChar === false && confirmSymbolChar === false) {
-        alert("You must at least one parameter");
+        alert("You must choose at least one parameter");
         upperCase();
         lowerCase();
         numberCase();
@@ -116,7 +116,7 @@ function writePassword() {
 var passwordCharacters = {
     upperCaseCharCodes: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
     lowerCaseCharCodes: 'abcdefghijklmnopqrstuvwxyz',
-    numberCharCodes: '012345678901234567890123456789',
+    numberCharCodes: '01234567890123456789',
     symbolCharCodes: '!"#$%&()*+,-./:;<=>?@[\]^_`{|}~'
 };
 

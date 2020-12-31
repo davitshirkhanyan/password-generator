@@ -141,5 +141,9 @@ header {
         font-size: 1.2rem;
         text-align: center;
     }
+
+    .password {
+        font-size: 12px;
+    }
   }
   /* END STYLE MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
